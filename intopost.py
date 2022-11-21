@@ -39,7 +39,9 @@ def inftopof(infix):
         # print(output)
         # print(ops)
     while ops.seek() != None:
-        output.push(ops.pop())
+        x = ops.pop()
+        if x != '(':
+            output.push(x)
     return output
 
 
