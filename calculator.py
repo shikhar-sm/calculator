@@ -1,4 +1,4 @@
-import calculate
+import tools.calculate as calculate
 import tkinter as tk
 from tkinter import ttk
 from tkinter import *

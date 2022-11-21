@@ -1,7 +1,7 @@
 # solve expression
 
-import intopost as ip
-import stack
+import tools.intopost as ip
+import tools.stack as stack
 
 
 def compute(expression):

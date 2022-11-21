@@ -1,6 +1,6 @@
 # infix to postfix
 
-import stack
+import tools.stack as stack
 import re
 
 
