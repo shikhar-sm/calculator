@@ -27,12 +27,13 @@ def compute(expression):
                     answer.push(y*x)
                 elif p == '/':
                     answer.push(y/x)
-        fans = 1
+        fans = answer.pop()
         # print(answer)
-        while answer.seek() != None:
-            fans = fans * answer.pop()
-        return (0, fans)
+        if answer.seek() != None:
+            raise Exception("Invalid Expression"+' '+str(answer))
+        else:
+            return (0, fans)
     except ValueError:
         return (1, "Math Error")
     except Exception as e:
-        return (1, "Unknown Error occured", e)
+        return (1, 'error: '+e.__str__())
